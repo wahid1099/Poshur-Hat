@@ -1,0 +1,227 @@
+/* font cdn */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+/* common css  */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* --------------------------------
+            Search-Box
+-----------------------------------*/
+
+.search-container {
+  background: #fff;
+  height: 40px;
+  border-radius: 30px;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-input {
+  width: 400px;
+  height: 40px;
+}
+
+.search-container .search-input {
+  border: none;
+  outline: none;
+}
+.search-btn {
+  color: red;
+}
+/* ----------------------------
+            Nav-Bar
+-------------------------------*/
+.hat-nav-item {
+  margin-right: 30px;
+}
+
+.hat-user-menu-list > a:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.return-btn:focus {
+  box-shadow: none;
+}
+
+.background img {
+  opacity: 0.1;
+}
+
+.hat-form:focus {
+  box-shadow: none;
+}
+
+/* ----------------------------
+        Product-Cards
+-------------------------------*/
+
+.hat-card {
+  transition: transform 0.5s ease-in-out;
+}
+.hat-card:hover {
+  transform: scale(1.1);
+}
+.hat-btn {
+  border: 0;
+}
+.hat-btn:hover {
+  background-color: #dc3545;
+  border: 0;
+}
+
+.eid {
+  position: relative;
+}
+
+.eid-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #dc3545;
+}
+
+.eid:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* --------------------------------
+          Animation
+-------------------------------- */
+@keyframes cutting {
+  from {
+    top: -170px;
+  }
+  to {
+    top: 170px;
+  }
+}
+@keyframes cutting-2 {
+  from {
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  to {
+    margin-left: 50px;
+    margin-top: 100px;
+  }
+}
+
+/* --------------------------------
+          Slider-1
+-------------------------------- */
+.capati-animation {
+  margin-left: 100px;
+  margin-top: 50px;
+}
+.capati img {
+  width: 200px;
+  margin-top: -70px;
+  margin-left: 20px;
+  transform: scaleX(-1) rotate(-40deg);
+  position: absolute;
+}
+header:hover .capati img {
+  animation: cutting 0.5s 1 ease-in-out;
+}
+header:hover .gosto-2 img {
+  width: 50%;
+  animation: cutting-2 0.5s 0.5s 1 ease-in-out;
+}
+
+.kather-guti img {
+  width: 200px;
+  margin-top: 100px;
+}
+.gosto-1 {
+  margin-left: 20px;
+}
+
+.gosto-1,
+.gosto-2 {
+  position: absolute;
+  margin-top: 90px;
+}
+.gosto-1 img {
+  width: 50%;
+}
+.gosto-2 img {
+  width: 50%;
+  transition: all 0.5s ease-in-out 0.5s;
+}
+.goster-tukra img {
+  width: 200px;
+  margin: -50px 0px 0px 70px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+.hat-list li {
+  background-color: #212529;
+  color: white;
+}
+.hat-list li:hover {
+  background-color: #dc3545;
+}
+.hat-number {
+  background-color: #dc3545;
+  color: white;
+}
+.hat-list li:hover .hat-number {
+  background-color: white;
+  color: #212529;
+}
+
+.hat-footer-product {
+  text-align: center;
+}
+.social-icons {
+  color: white;
+}
+.social-icons:hover {
+  color: #dc3545;
+}
+.social-icons i {
+  transition: transform 0.3s ease-in-out;
+}
+.social-icons i:hover {
+  transform: scale(1.2) translatey(-5px);
+}
+.transition-catagoris > div {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transition-catagoris > div:hover {
+  transform: scale(1.05);
+}
